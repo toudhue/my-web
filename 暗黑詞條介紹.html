@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>阿肥放置天堂 · 暗黑詞條系統</title>
+<style>
+:root{--bg:#15100b;--card:#221911;--bd:#5a4a26;--gold:#f5c451;--txt:#e8ddc4;--dim:#a99a7a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:"Microsoft JhengHei","Segoe UI",system-ui,sans-serif;line-height:1.6}
+header{padding:20px 16px 12px;text-align:center;border-bottom:2px solid var(--bd);background:linear-gradient(180deg,#2a1f12,#15100b)}
+h1{margin:0;color:var(--gold);font-size:26px}
+.sub{color:var(--dim);font-size:13px;margin-top:4px}
+.wrap{max-width:980px;margin:0 auto;padding:14px 12px 30px}
+section{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px 18px;margin-top:16px;border-left:4px solid var(--color,#f5c451)}
+h2{margin:0 0 4px;color:var(--gold);font-size:20px}
+h3{margin:16px 0 6px;color:#d8cba8;font-size:15px;border-bottom:1px dashed var(--bd);padding-bottom:4px}
+.note{font-size:12.5px;color:var(--dim);margin:4px 0 8px}
+.note b{color:#d8cba8}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin:6px 0}
+th,td{border:1px solid var(--bd);padding:6px 9px;text-align:center}
+th{background:#2a1f12;color:var(--gold);font-weight:bold}
+td.l{text-align:left}
+tr:nth-child(even) td{background:#1b140d}
+.hl{color:#86efac;font-weight:bold}
+.warn{color:#fbbf24}
+.new{font-size:10.5px;font-weight:bold;background:#b45309;color:#fff;border-radius:4px;padding:0 5px;margin-left:4px;vertical-align:2px}
+.t-gray{color:#9ca3af;font-weight:bold}
+.t-blue{color:#60a5fa;font-weight:bold}
+.t-gold{color:#ffd700;font-weight:bold}
+.pill{display:inline-block;font-size:11px;font-weight:bold;border-radius:5px;padding:1px 8px;vertical-align:2px;margin-left:6px}
+footer{text-align:center;color:var(--dim);font-size:12px;padding:18px}
+a.back{color:var(--gold)}
+</style></head><body>
+<header>
+  <h1>阿肥放置天堂 · 暗黑詞條系統</h1>
+  <div class="sub">D2（暗黑破壞神）式隨機詞條 ・ 掉落開獎 ・ 三品階（灰／藍／暗金）</b></div>
+</header>
+<div class="wrap">
+
+<!-- ===================== 系統概念 ===================== -->
+<section style="--color:#a855f7">
+  <h2> 什麼是暗黑詞條</h2>
+  <div class="note">部分裝備掉落時，除了原本的能力，還會<b>額外隨機附帶「暗黑詞條」</b>——就像暗黑破壞神的裝備隨機屬性。每件掉落各自獨立擲，同一款裝備每一件詞條都可能不同，<b>撿到就固定</b>、之後不會再變。</div>
+  <div class="note">目前開放暗黑詞條的裝備：<b class="t-gold">泰坦皮帶</b>。</div>
+
+  <h3>三個品階（顏色越亮越強）</h3>
+  <table>
+    <tr><th>品階</th><th>顯示顏色</th><th>強度</th></tr>
+    <tr><td class="t-gray">灰　普通</td><td class="t-gray">灰色字</td><td class="l">數值最低</td></tr>
+    <tr><td class="t-blue">藍　稀有</td><td class="t-blue">藍色字</td><td class="l">中等</td></tr>
+    <tr><td class="t-gold">暗金　傳說</td><td class="t-gold">金色字</td><td class="l">該詞條最高值</td></tr>
+  </table>
+  <div class="note">一件裝備上的每一條詞條，<b>各自獨立</b>決定品階（同一件可能一條灰、一條暗金）。</div>
+</section>
+
+<!-- ===================== 詞條數量 ===================== -->
+<section style="--color:#60a5fa">
+  <h2> 詞條數量機率</h2>
+  <div class="note">泰坦皮帶掉落時，先決定「這件帶幾條詞條」：</div>
+  <table>
+    <tr><th>詞條數量</th><th>機率</th><th>說明</th></tr>
+    <tr><td>0 條</td><td>50%</td><td class="l">白板泰坦皮帶（無暗黑詞條）</td></tr>
+    <tr><td>1 條</td><td>45%</td><td class="l">單詞條</td></tr>
+    <tr><td>2 條</td><td class="hl">5%</td><td class="l">雙詞條（兩條必為<b>不同</b>詞條，不重複）</td></tr>
+  </table>
+  <div class="note">也就是說：撿到帶詞條的泰坦皮帶機率 <b>50%</b>，其中雙詞條只有 <b>5%</b>。</div>
+
+  <h3>每一條的品階機率</h3>
+  <table>
+    <tr><th>品階</th><th>機率</th></tr>
+    <tr><td class="t-gray">灰</td><td>70%</td></tr>
+    <tr><td class="t-blue">藍</td><td>25%</td></tr>
+    <tr><td class="t-gold">暗金</td><td>5%</td></tr>
+  </table>
+  <div class="note">例：抽到「1 條詞條、且為暗金」的機率 ＝ 45% × 5% ＝ 約 <b class="t-gold">2.25%</b>；「雙詞條且兩條都暗金」約 <b class="t-gold">0.0125%</b>（5% × 5% × 5%）——極其稀有。</div>
+</section>
+
+<!-- ===================== 詞條池總表 ===================== -->
+<section style="--color:#ffd700">
+  <h2> 詞條池總表（泰坦皮帶）</h2>
+  <div class="note">共 <b>13 種</b>詞條，抽中後在該品階的區間內<b>均勻隨機</b>取值。下表列出各品階的數值範圍：</div>
+  <table>
+    <tr><th>詞條</th><th class="t-gray">灰</th><th class="t-blue">藍</th><th class="t-gold">暗金</th></tr>
+    <tr><td class="l">近距離傷害</td><td class="t-gray">+1</td><td class="t-blue">+2</td><td class="t-gold">+3</td></tr>
+    <tr><td class="l">近距離命中</td><td class="t-gray">+1</td><td class="t-blue">+2</td><td class="t-gold">+3</td></tr>
+    <tr><td class="l">遠距離傷害</td><td class="t-gray">+1</td><td class="t-blue">+2</td><td class="t-gold">+3</td></tr>
+    <tr><td class="l">遠距離命中</td><td class="t-gray">+1</td><td class="t-blue">+2</td><td class="t-gold">+3</td></tr>
+    <tr><td class="l">額外傷害</td><td class="t-gray">+1</td><td class="t-blue">+2</td><td class="t-gold">+3</td></tr>
+    <tr><td class="l">額外命中</td><td class="t-gray">+1</td><td class="t-blue">+2</td><td class="t-gold">+3</td></tr>
+    <tr><td class="l">防禦 <span class="note" style="display:inline">（AC）</span></td><td class="t-gray">-1</td><td class="t-blue">-2</td><td class="t-gold">-3</td></tr>
+    <tr><td class="l">魔防（MR）</td><td class="t-gray">+1～2</td><td class="t-blue">+3～4</td><td class="t-gold">+5</td></tr>
+    <tr><td class="l">最大 HP</td><td class="t-gray">+10～19</td><td class="t-blue">+20～29</td><td class="t-gold">+30</td></tr>
+    <tr><td class="l">最大 MP</td><td class="t-gray">+10～19</td><td class="t-blue">+20～29</td><td class="t-gold">+30</td></tr>
+    <tr><td class="l">MP 恢復</td><td class="t-gray">+1～2</td><td class="t-blue">+3～4</td><td class="t-gold">+5</td></tr>
+    <tr><td class="l">額外魔法點數</td><td class="t-gray">+1～2</td><td class="t-blue">+3～4</td><td class="t-gold">+5</td></tr>
+    <tr><td class="l">傷害減免</td><td class="t-gray">+1</td><td class="t-blue">+2</td><td class="t-gold">+3</td></tr>
+  </table>
+  <div class="note"><b>雙詞條時兩條<b>必為不同</b>詞條（同池不重複抽）。</div>
+</section>
+
+<!-- ===================== 範例 / 注意事項 ===================== -->
+<section style="--color:#7bd14a">
+  <h2> 範例與注意事項</h2>
+  <h3>範例</h3>
+  <div class="note">
+    ・ <b>白板泰坦皮帶</b>（50%）：沒有任何暗黑詞條。<br>
+    ・ <span class="t-gray">近距離傷害 +1</span>（1 條、灰）：最常見的帶詞條結果。<br>
+    ・ <span class="t-gold">最大 HP +30</span>（1 條、暗金）：單條頂級。<br>
+    ・ <span class="t-blue">魔防 +4</span>　＋　<span class="t-gold">傷害減免 +3</span>（雙詞條、一藍一暗金）：稀有的雙屬性強帶。
+  </div>
+  <h3>注意事項</h3>
+  <div class="note">
+    ・ 詞條在<b>掉落當下</b>一次擲定，之後<b>不可洗、不可改</b>。<br>
+    ・ 帶詞條的裝備<b>每件獨立佔一格</b>，不會和其他泰坦皮帶疊在同一格。<br>
+    ・ 詞條效果直接計入你的能力（近傷／命中／HP／MP／防禦等），與強化、屬性、祝福、遠古等其他詞綴<b>可同時存在、分開計算</b>。<br></span>
+  </div>
+</section>
+
+<div style="text-align:center;margin-top:14px"><a class="back" href="index.html">← 返回介紹首頁</a></div>
+</div>
+</body></html>
